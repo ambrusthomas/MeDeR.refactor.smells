@@ -9,6 +9,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.resources;bundle-version="3.8.0",
  org.eclipse.emf.refactor.smells;bundle-version="0.7.0"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.eclipse.emf.refactor.smells.configuration.core,
  org.eclipse.emf.refactor.smells.configuration.managers

@@ -50,9 +50,11 @@ public class ModelSmellLoader {
 					.getAttribute(ExtensionPointTags.MODELSMELL_DESCRIPTION_TAG);
 			final String metamodel = element
 					.getAttribute(ExtensionPointTags.MODELSMELL_METAMODEL_TAG);
+			final String defaultLimit = element
+					.getAttribute(ExtensionPointTags.MODELSMELL_DEFAULT_LIMIT_TAG);
 			final IModelSmellFinder finderClass = (IModelSmellFinder) 
 					element.createExecutableExtension(ExtensionPointTags.MODELSMELL_FINDER_CLASS_TAG);
-			return new ModelSmell(name, description, metamodel, finderClass, id);
+			return new ModelSmell(name, description, metamodel, defaultLimit, finderClass, id);
 		} catch (Throwable e) {
 			e.printStackTrace();
 			return null;

@@ -238,11 +238,14 @@ public class ModelSmellPropertyPage extends PropertyPage {
 	private double[] getLimits() throws NumberFormatException{
 		double[] limits = new double[mapping.getSize()];
 		for (int index = 0; index < mapping.getSize(); index++) {
+			String defaultLimit = mapping.getModelSmell(index).getDefaultLimit();
 			String limit = mapping.getTableItem(index).getText(3);
 			if(!limit.equals(""))
 				limits[index] = Double.parseDouble(limit);
-			else
+			else if (defaultLimit == null)
 				limits[index] = 0.0;
+			else
+				limits[index] = Double.parseDouble(defaultLimit);
 		}
 		return limits;
 	}

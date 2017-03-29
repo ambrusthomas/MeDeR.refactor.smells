@@ -14,10 +14,7 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="true"
-            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
-         <menu
-               id="org.eclipse.emf.refactor.runtime.menu"
-               label="EMF Quality Assurance (use existing techniques)">
+            locationURI="popup:org.eclipse.emf.refactor.runtime.menu">
             <command
                   commandId="org.eclipse.emf.refactor.smells.papyrus.findModelSmellCommand"
                   icon="icons/modelsmell.PNG"
@@ -38,7 +35,6 @@
                   </iterate>
                </visibleWhen>
             </command>
-         </menu>
       </menuContribution>
    </extension>
 

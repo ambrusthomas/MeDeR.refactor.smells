@@ -12,4 +12,4 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.refactor.smells.runtime;bundle-version="0.7.0",
  org.eclipse.birt.report.engine;bundle-version="4.2.1"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

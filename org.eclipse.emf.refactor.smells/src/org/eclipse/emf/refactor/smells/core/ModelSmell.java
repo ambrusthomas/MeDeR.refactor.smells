@@ -14,6 +14,7 @@ public class ModelSmell implements Comparable<ModelSmell> {
 	private String name;
 	private String description;
 	private String metamodel;
+	private String defaultLimit;
 	private IModelSmellFinder finderClass;
 
 	/**
@@ -26,12 +27,17 @@ public class ModelSmell implements Comparable<ModelSmell> {
 	 * @param id
 	 */
 	public ModelSmell(String name, String description, String metamodel,
-			IModelSmellFinder finderClass, String id) {
+			String defaultLimit, IModelSmellFinder finderClass, String id) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
+		this.defaultLimit = defaultLimit;
 		this.metamodel = metamodel;
 		this.finderClass = finderClass;
+	}
+	
+	public String getDefaultLimit() {
+		return defaultLimit;
 	}
 
 	public String getId() {

@@ -17,5 +17,6 @@ public class ExtensionPointTags {
 	public static final String MODELSMELL_DESCRIPTION_TAG = "modelsmell_description";
 	public static final String MODELSMELL_METAMODEL_TAG = "modelsmell_metamodel";
 	public static final String MODELSMELL_FINDER_CLASS_TAG = "modelsmell_finderclass";
+	public static final String MODELSMELL_DEFAULT_LIMIT_TAG = "modelsmell_defaultlimit";
 	
 }
